@@ -43,18 +43,18 @@ const OfferPopup: React.FC<OfferPopupProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed bottom-24 left-4 z-30 max-w-xs animate-fade-up">
-      <div className="bg-white rounded-lg shadow-xl p-4 border border-gray-100 relative mx-4">
+    <div className="fixed bottom-24 left-4 z-30 max-w-[200px] animate-fade-up">
+      <div className="bg-white rounded-lg shadow-xl p-3 border border-gray-100 relative">
         <button 
           onClick={handleClose}
-          className="absolute right-0.5 top-0.5 p-1 rounded-full hover:bg-gray-200 transition-colors"
+          className="absolute right-1 top-1 p-1 rounded-full hover:bg-gray-200 transition-colors"
           aria-label="Cerrar"
         >
           <X size={14} className="text-gray-500" />
         </button>
         
-        <h3 className="text-sm font-bold mb-0.5">{title}</h3>
-        <p className="text-xs text-gray-600 mb-1.5">
+        <h3 className="text-sm font-bold mb-1">{title}</h3>
+        <p className="text-xs text-gray-600 mb-2">
           {description}
         </p>
         <div className="flex justify-end">
