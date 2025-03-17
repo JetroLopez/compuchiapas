@@ -26,7 +26,13 @@ const NavBar: React.FC = () => {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
-      if (menuOpen && !target.closest('[data-menu="mobile"]')) {
+      const menuButton = document.querySelector('[data-menu="button"]');
+      if (
+        menuOpen && 
+        !target.closest('[data-menu="mobile"]') && 
+        !target.closest('[data-menu="button"]') &&
+        target !== menuButton
+      ) {
         setMenuOpen(false);
       }
     };
@@ -92,6 +98,7 @@ const NavBar: React.FC = () => {
 
           {/* Mobile menu button */}
           <button 
+            data-menu="button"
             className="md:hidden p-2" 
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
