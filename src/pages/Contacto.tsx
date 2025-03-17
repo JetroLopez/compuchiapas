@@ -304,7 +304,7 @@ const Contacto: React.FC = () => {
           <p className="text-xl mb-12 max-w-3xl mx-auto opacity-90">
             Contáctanos por WhatsApp y recibe atención personalizada en minutos
           </p>
-          <a href="https://wa.me/529622148546" target="_blank" rel="noopener noreferrer" className="bg-white text-tech-blue hover:bg-gray-100 py-4 px-10 rounded-lg font-medium text-lg transition-all duration-300 inline-flex items-center justify-center gap-2">
+          <a href="https://wa.me/529622148546?text=Hola,%20me%20comunico%20desde%20su%20pagina%20web" target="_blank" rel="noopener noreferrer" className="bg-white text-tech-blue hover:bg-gray-100 py-4 px-10 rounded-lg font-medium text-lg transition-all duration-300 inline-flex items-center justify-center gap-2">
             <MessageCircle size={24} />
             Contáctanos por WhatsApp
           </a>
