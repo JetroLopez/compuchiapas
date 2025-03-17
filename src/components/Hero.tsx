@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] -z-10"></div>
       
       <div className="container-padding max-w-7xl mx-auto text-center relative z-10">
-        <div className="pt-20 pb-16 md:pt-28 md:pb-20">
+        <div className="pt-20 pb-32 md:pt-28 md:pb-36">
           <h1 ref={titleRef} className="opacity-0 transition-opacity duration-300">
             <span className="block text-6xl md:text-7xl lg:text-8xl font-bold text-tech-gray mb-4">
               Expertos en tecnología
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Arrow button with gradient background */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent flex items-center justify-center z-0">
+      <div className="absolute -bottom-4 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent flex items-center justify-center z-0">
         <button 
           onClick={scrollToServices} 
           className="transform hover:translate-y-1 transition-transform duration-300" 

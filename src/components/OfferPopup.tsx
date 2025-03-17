@@ -29,7 +29,7 @@ const OfferPopup: React.FC<OfferPopupProps> = ({
 
   if (isMinimized) {
     return (
-      <div className="fixed bottom-24 left-4 z-30 animate-fade-up">
+      <div className="fixed bottom-6 left-4 z-30 animate-fade-up">
         <button 
           onClick={handleReopen}
           className="bg-tech-blue text-white rounded-full py-1.5 px-3 shadow-lg hover:bg-tech-blue/90 transition-colors text-xs"
@@ -43,7 +43,7 @@ const OfferPopup: React.FC<OfferPopupProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed bottom-24 left-4 z-30 max-w-[200px] animate-fade-up">
+    <div className="fixed bottom-6 left-4 z-30 max-w-[200px] animate-fade-up">
       <div className="bg-white rounded-lg shadow-xl p-3 border border-gray-100 relative">
         <button 
           onClick={handleClose}
