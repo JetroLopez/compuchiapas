@@ -47,28 +47,28 @@ const Hero: React.FC = () => {
       <div className="container-padding max-w-7xl mx-auto text-center relative z-10">
         <div className="pt-20 pb-32 md:pt-28 md:pb-36">
           <h1 ref={titleRef} className="opacity-0 transition-opacity duration-300">
-            <span className="block text-6xl md:text-7xl lg:text-8xl font-bold text-tech-gray mb-4">
+            <span className="block text-6xl md:text-7xl lg:text-8xl font-bold text-tech-gray mb-2 md:mb-4">
               Expertos en tecnología
             </span>
-            <span className="text-gradient block text-4xl md:text-5xl lg:text-6xl font-bold mt-4 pb-2">
+            <span className="text-gradient block text-4xl md:text-5xl lg:text-6xl font-bold mt-2 md:mt-4 pb-2">
               Tu mejor elección
             </span>
           </h1>
           
-          <p ref={subtitleRef} className="text-xl md:text-2xl lg:text-3xl text-gray-600 max-w-4xl mx-auto mt-12 mb-12 opacity-0 transition-opacity duration-300">
+          <p ref={subtitleRef} className="text-xl md:text-2xl lg:text-3xl text-gray-600 max-w-4xl mx-auto mt-6 md:mt-12 mb-8 md:mb-12 opacity-0 transition-opacity duration-300">
             Servicios técnicos profesionales y equipos de calidad con garantía de satisfacción
           </p>
           
-          <div ref={ctaRef} className="flex flex-col sm:flex-row items-center justify-center gap-8 opacity-0 transition-opacity duration-300">
+          <div ref={ctaRef} className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 opacity-0 transition-opacity duration-300">
             <a 
               href="/servicios" 
-              className="btn-primary text-lg px-12 py-4 min-w-[240px] sm:min-w-[280px] transition-transform hover:scale-105"
+              className="btn-primary text-lg px-12 py-3 md:py-4 min-w-[240px] sm:min-w-[280px] transition-transform hover:scale-105"
             >
               Ver servicios
             </a>
             <a 
               href="/productos" 
-              className="btn-outline text-lg px-12 py-4 min-w-[240px] sm:min-w-[280px] transition-transform hover:scale-105"
+              className="btn-outline text-lg px-12 py-3 md:py-4 min-w-[240px] sm:min-w-[280px] transition-transform hover:scale-105"
             >
               Explorar productos
             </a>
