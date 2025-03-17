@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Arrow button with gradient background */}
-      <div className="absolute -bottom-4 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent flex items-center justify-center z-0">
+      <div className="absolute -bottom-4 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent flex items-center justify-center z-20">
         <button 
           onClick={scrollToServices} 
           className="transform hover:translate-y-1 transition-transform duration-300" 

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -22,6 +21,19 @@ const NavBar: React.FC = () => {
   useEffect(() => {
     setMenuOpen(false);
   }, [location.pathname]);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (menuOpen && !target.closest('[data-menu="mobile"]')) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [menuOpen]);
 
   const navLinks = [
     { name: 'Inicio', path: '/' },
@@ -91,7 +103,7 @@ const NavBar: React.FC = () => {
 
       {/* Mobile Navigation */}
       {menuOpen && (
-        <div className="md:hidden bg-white">
+        <div data-menu="mobile" className="md:hidden bg-white">
           <nav className="flex flex-col px-4 py-6 space-y-4 animate-fade-in">
             {navLinks.map((link) => (
               <Link 
