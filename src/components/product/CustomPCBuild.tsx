@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface CheckIconProps {
@@ -50,7 +49,7 @@ const CustomPCBuild: React.FC = () => {
           </div>
           
           <a 
-            href="https://wa.me/529612345678?text=Hola,%20me%20interesa%20cotizar%20una%20PC%20personalizada." 
+            href="https://wa.me/529622148546?text=Hola,%20me%20interesa%20cotizar%20una%20PC%20personalizada." 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center"
@@ -61,7 +60,7 @@ const CustomPCBuild: React.FC = () => {
         
         <div className="hidden md:block">
           <img 
-            src="https://images.unsplash.com/photo-1624705002806-5d72df19c3dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+            src="https://lh6.googleusercontent.com/AIsWPwla3lqcfjOBkQc48pKmtjmCFWdlT-gfFofb5TEFrT7bOMID_kQmrEFEW06HvfaHCAq_7iffPchZAe1pRswSf8odTHi_wqMqBNcT1kxHjqznMX0AI8zMJbhLL8boolPTbcFBwAksbdgGVg" 
             alt="Ensamble de PC" 
             className="rounded-xl w-full h-auto shadow-lg"
           />

@@ -85,7 +85,7 @@ const Contacto: React.FC = () => {
               <h3 className="text-xl font-semibold mb-3">WhatsApp</h3>
               <p className="text-gray-600 mb-6">Respuesta inmediata a tus consultas</p>
               <a 
-                href="https://wa.me/529622148546" 
+                href="https://wa.me/529622148546?text=Hola,%20me%20comunico%20desde%20su%20pagina%20web" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium transition-all duration-300 inline-flex items-center justify-center gap-2 px-6 py-3 w-full"
@@ -149,10 +149,22 @@ const Contacto: React.FC = () => {
                 ></iframe>
                 <div className="absolute top-0 left-0 w-full h-full bg-black/5 flex items-center justify-center">
                   <div className="bg-white p-4 rounded-lg shadow-lg max-w-xs">
-                    <h3 className="font-semibold mb-2">Compuchiapas</h3>
+                    <a href="https://maps.app.goo.gl/bVj1dqaaFZUPHUXg7" target="_blank" rel="noopener noreferrer">
+                      <h3 className="font-semibold mb-2 hover:text-tech-blue transition-colors">Compuchiapas</h3>
+                    </a>
                     <div className="flex items-start text-gray-700 mb-2">
                       <MapPin size={16} className="mt-0.5 mr-2 flex-shrink-0" />
-                      <p className="text-sm">Compusistemas de Chiapas, Centro, 30700 Tapachula de Córdova y Ordóñez, Chis.</p>
+                      <div>
+                        <p className="text-sm">6a. Avenida Sur, Los Naranjos, Centro, 30700 Tapachula de Córdova y Ordóñez, Chis.</p>
+                        <a 
+                          href="https://maps.app.goo.gl/bVj1dqaaFZUPHUXg7" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-sm text-tech-blue hover:underline mt-1 inline-block"
+                        >
+                          Ampliar el mapa
+                        </a>
+                      </div>
                     </div>
                     <div className="flex items-center text-gray-700">
                       <Clock size={16} className="mr-2" />

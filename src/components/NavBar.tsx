@@ -102,11 +102,11 @@ const NavBar: React.FC = () => {
           {/* Mobile menu button */}
           <button 
             data-menu="button"
-            className="md:hidden p-2" 
+            className="md:hidden p-4 -m-4" 
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
-            {menuOpen ? <X size={24} /> : <Menu size={24} />}
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
       </div>
