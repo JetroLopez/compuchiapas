@@ -29,8 +29,13 @@ const Hero: React.FC = () => {
 
   const scrollToServices = () => {
     const servicesSection = document.getElementById('servicios-destacados');
+    const headerOffset = 100; // Altura del header + margen adicional
     if (servicesSection) {
-      servicesSection.scrollIntoView({
+      const elementPosition = servicesSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
         behavior: 'smooth'
       });
     }
