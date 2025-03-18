@@ -52,22 +52,15 @@ const fetchProductsFromSupabase = async (): Promise<ProductSpec[]> => {
       // Simplificamos las especificaciones, solo usamos la categoría
       const specs = [`Marca: ${item["LINEA ACT"] || 'No especificada'}`];
       
-      // Obtener imagen de placeholder - en una app real, tendrías URLs de imágenes en tu base de datos
-      const imagePool = [
-        'https://images.unsplash.com/photo-1496181133206-80ce9b88a853',
-        'https://images.unsplash.com/photo-1587202372775-e229f172b9d7',
-        'https://images.unsplash.com/photo-1593642632823-8f785ba67e45',
-        'https://images.unsplash.com/photo-1527219525722-f9767a7f2884'
-      ];
-      
-      const randomImage = imagePool[index % imagePool.length] + '?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80';
-      
+      // Usamos la URL de la imagen desde la base de datos
+      const imageUrl = item.image_url;
+
       return {
         id: index + 1,
         name: item.Descripcion,
         price: price,
         category: item["LINEA ACT"].toLowerCase(),
-        image: randomImage,
+        image: imageUrl,
         specs: specs,
         sku: item.Clave,
         stock: item.Existencias
